@@ -1,0 +1,67 @@
+data {
+  font-family: Fira sans,helvetica,sans serif;
+  font-size: 80%;
+  font-weight: bold;
+  margin-left: 5px;
+   }
+h1 {
+  font-family: Playfair Display,Times new roman,serif;
+  font-size:250%;
+  margin-left: 20px;
+}
+pyw {
+  font-family: Fira sans,helvetica,sans serif;
+  font-size: 90%;
+  margin-left: 20px;
+  }
+tr#back {
+  background-color: #F1DEC3;
+}
+td#back {
+  background-color: #F1DEC3;
+}
+search {
+  font-family: Fira sans,helvetica,sans serif;
+  margin-left: 10px;
+  font-size: 90%;
+}
+p#gtas {
+  font-family: Fira sans,helvetica,sans serif;
+  margin-left: 10px;
+  }
+a {
+  color: #1A5870;
+  text-decoration:none;
+  }
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+p#signup {
+  font-family: Fira sans,helvetica,sans serif;
+  margin-right: 20px;
+  font-size: 110%;
+}
+p {
+  font-family: Fira sans,helvetica,sans serif;
+  font-size: 90%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  font-family: Playfair Display,Times new roman,serif;
+  font-weight: bold;
+  margin-left: 10px;
+}
+p#paragrafetto {
+  font-size: 80%;
+}
+h3{
+  font-family: Playfair Display,Times new roman,serif;
+  margin-left:10px;
+  margin-right:10px;
+}
+td#line
+{
+  align-content: center;
+}
