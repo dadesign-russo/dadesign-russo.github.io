@@ -1,0 +1,737 @@
+/*Definiamo come gli elementi di HTML devono apparire, stiamo curando l'aspetto estetico attribuendo
+delle proprietà. Ad esempio: font, colore, posizione. Queste proprietà potrebbero anche essere definite
+all'interno dei file HTML, ma non si usa.*/
+
+/*Desktop*/
+.spazio{
+    margin-bottom: 5%;
+}
+
+.centered{
+    text-align: center;
+}
+
+.left-align{
+    text-align: left;
+}
+
+/*Pagine dove inserire le immagini*/
+.upload-div{
+    display: flex;
+    flex-direction: row;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.drag-area{
+    margin-left: 1%;
+    margin-top: 2%;
+    border: 2px solid #f72145;
+    height: 600px;
+    width: 400px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-area.active{
+    border: 2px solid #f72145;
+}
+
+.drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 15px 0;
+}
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #5256ad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*FONT*/
+
+/*
+Le seguenti classi verranno applicate ai tag HTML per impostare il font desiderato
+ */
+@font-face { font-family: Gilroy; src: url('Gilroy-Regular.otf'); }
+@font-face { font-family: Gilroy; font-weight: bold; src: url('Gilroy-Bold.otf');}
+@font-face { font-family: Gilroy; font-weight: 100; src: url('Gilroy-Light.otf');}
+
+.font-Gilroy{
+    font-family: Gilroy, sans-serif;
+}
+
+.font-btn{
+    font-family: Gilroy, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*
+Titoli e paragrafi
+ */
+h1{
+    font-family: Gilroy, sans-serif;
+    font-weight: bold;
+    font-size: 120px;
+    margin-top: 0;
+    margin-bottom: 1%;
+    line-height: 90%;
+}
+
+h2{
+    font-family: Gilroy, sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+h3{
+    font-family: Gilroy, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.descrizioni{
+    font-family: Gilroy, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.main-box{
+    width: 60%;
+    margin-bottom: 4%;
+}
+
+.small{
+    font-size: 18px;
+}
+
+.descrizioni-gray{
+    font-family: Gilroy, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: gray;
+    font-size: 30px;
+	text-align: left;
+	margin-right: 35%;
+}
+
+.descrizioni-ap{
+    font-family: Gilroy, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: gray;
+    font-size: 30px;
+	
+}
+
+.descrizioni-black{
+    font-family: Gilroy, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20;
+}
+
+.red{
+    color: #f72145;
+}
+
+.inizia-ora-btn{
+    margin-top: 0;
+    width: 40%;
+    height: auto;
+}
+
+.nuovo-progetto-btn{
+    margin-top: 0;
+    width: 25%;
+    height: auto;
+}
+
+/*
+Container dove mettere i paragrafi e i titoli
+ */
+
+.Pagina{
+    margin-left: 5%;
+}
+
+#div-home{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+#inizia-div{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 45%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.freccia-btn{
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+/*FORM*/
+
+/*Questo è il container del form, vogliamo che gli elementi siano centrati*/
+.column-form{
+    display: flex;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Qui andiamo a mettere il bordo rosso sotto l'input testuale*/
+input[type=text]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: #f72145 solid 2px;
+}
+
+.input-feedback{
+    margin-bottom: 2%;
+    width: 75%;
+}
+/*Mi assicuro che non compaiano i bordi mentre compilo il form*/
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+/* NAVBAR */
+
+#menu-mobile{
+    display: none;
+}
+
+.navbar{
+    background-color: white;
+    border-bottom: #f72145 solid 5px;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+}
+
+.active{
+    font-weight: bold;
+    border-bottom: #f72145 solid 2px;
+}
+
+.navbar-list{
+    list-style-type: none;
+    overflow: hidden;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-li-navbar{
+    float: left;
+    margin-right: 45%;
+    margin-left: 5%;
+}
+
+.icon-img{
+    width: 80px;
+    height: 80px;
+}
+
+.li-navbar{
+    float: left;
+    margin-right: 5%;
+    margin-top: 1.5%;
+    margin-left: 10%;
+}
+
+.li-navbar-start{
+    float: left;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.hamburger-btn{
+    display: none;
+}
+
+.li-navbar a{
+    padding: 0 50%;
+    color: black;
+    text-decoration: none;
+}
+
+a.active{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f72145;
+}
+
+#Contact-us{
+    border: #f72145 2px solid;
+    border-radius: 20%;
+    padding: 10% 25%;
+}
+
+.li-navbar a:hover {
+    color: #f72145;
+    font-weight: bold;
+}
+
+.btn-home{
+    background-color: #f72145;
+    border: none;
+    border-radius: 30%;
+    padding: 0.5% 2%;
+}
+
+.spacing{
+    margin-top: 7%;
+}
+
+/** Gestisco lo slider tra le sezioni **/
+
+.Slider{
+    display: flex;
+    margin: 5% 0 5% 60%;
+    align-items: center;
+}
+
+.Slider a {
+    padding-right: 2%;
+}
+
+.img-slider{
+    height: 40px;
+    width: 40px;
+}
+
+.img-slider2{
+    height: 30px;
+    width: 30px;
+}
+
+.frecce{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+
+}
+
+/* Suggerimenti Step 3 */
+
+.suggestion-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+}
+/*Perchè 3 classi identiche? Vabbè*/
+.suggestion-box1{
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+.suggestion-box2{
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+.suggestion-box3{
+    display: flex;
+    flex-direction: column;
+    width: 30%
+}
+
+.suggestion-voice{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-suggestion{
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
+.img-open{
+    width: 15px;
+    height: 10px;
+}
+
+#myDIV {
+    display: none;
+}
+
+#myDIV2 {
+    display: none;
+}
+
+#myDIV3 {
+    display: none;
+}
+
+/* Form per i feedback */
+
+.form2{
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Pagina About Us */
+
+.Team{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img-team{
+    width: auto;
+    height: 650px;
+}
+
+/* Riassunto Finale */
+
+.body-finale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modifica{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.matita{
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 25px;
+    width: auto;
+}
+
+.matita-piccola{
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 20px;
+    width: auto;
+}
+
+.Moodboard-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.moodboard{
+    margin-right: 2%;
+    height: 600px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.moodboard2{
+    height: 500px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.moodboard3{
+    height: 600px;
+    width: 400px;
+    object-fit: contain;
+}
+
+/** Inizio codice relativo al mobile **/
+
+@media only screen and (max-width: 991px) {
+
+/** Qui nascondo la navbar desktop **/
+
+    .navbar{
+        border: none;
+    }
+    .navbar-list{
+        display: none;
+    }
+    #menu-mobile{
+        display: flex;
+    }
+
+    /** Background del bottone hamburger menù **/
+
+    label .menu {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 200px;
+        height: 200px;
+        background: #f72145;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+    }
+
+    /** Bottone dell'hamburger menù **/
+
+    label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+        background: white;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+
+    /** Animazioni al click dell'icona **/
+
+    label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+
+    label .hamburger:before { top: -10px; }
+
+    label .hamburger:after { bottom: -10px; }
+
+    label input { display: none; }
+
+    label input:checked + .menu {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+    }
+
+    label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+    }
+
+    label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+    }
+
+    label input:checked + .menu + ul { opacity: 1; }
+
+    /** Ul visibile dopo che hai aperto l'hamburger menù **/
+
+    label ul {
+        list-style-type: none;
+        z-index: 200;
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+    }
+
+    label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #f72145;
+        text-decoration: none;
+    }
+
+    /* Font mobile */
+
+    h1{
+        font-family: Gilroy, sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 1%;
+    }
+
+    h2{
+        font-family: Gilroy, sans-serif;
+        font-weight: normal;
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    h3{
+        font-family: Gilroy, sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+
+    .descrizioni{
+        font-family: Gilroy, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .descrizioni-gray{
+        font-family: Gilroy, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        color: gray;
+        font-size: 18px;
+    }
+
+    .descrizioni-black{
+        font-family: Gilroy, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .main-box{
+        width: 80%;
+    }
+
+    .inizia-ora-btn{
+        margin-top: 0;
+        width: 40%;
+        height: auto;
+    }
+
+    /* Home mobile */
+
+    #div-home{
+        flex-direction: column;
+    }
+    #inizia-div{
+        margin-top: 5%;
+        margin-left: 0;
+        width: auto;
+    }
+
+    .inizia-ora-btn{
+        margin-top: 10%;
+        width: 30%;
+        height: auto;
+    }
+
+    /* Slider tra le sezioni */
+
+    .Slider{
+        display: flex;
+        margin: 5% 0 5% 0;
+        align-items: center;
+    }
+
+    /* Pagina start e frecce di navigazione */
+
+    .frecce{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+
+    .freccia{
+        height: 70px;
+        width: 70px;
+    }
+
+    /* Ulpload immagini */
+
+    .upload-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* About Us Mobile */
+
+    .Team{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-team{
+        width: 300px;
+        height: auto;
+    }
+
+    .matita-piccola{
+        margin-top: 25px;
+        margin-left: 10px;
+        height: 10px;
+        width: auto;
+    }
+
+    .Moodboard-box{
+        flex-direction: column;
+    }
+
+    .left-align{
+       text-align: center;
+    }
+
+    .matita{
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 15px;
+        width: auto;
+    }
+
+}
